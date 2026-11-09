@@ -82,6 +82,8 @@
     <ul class="mt-4 flex flex-wrap gap-6">
       <li><a href="https://github.com/lajennylove" class="text-link">GitHub: lajennylove</a></li>
       <li><a href="https://www.linkedin.com/in/lajennylove/" class="text-link">LinkedIn: lajennylove</a></li>
+      <li><a href="https://x.com/la_jennylove" class="text-link">X: @la_jennylove</a></li>
+      <li><a href="https://lajennylove.com" class="text-link">lajennylove.com</a></li>
     </ul>
   </footer>
 @endsection
