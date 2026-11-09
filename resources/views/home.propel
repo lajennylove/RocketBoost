@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title')Home@endsection
 @section('content')
+  <img src="{{ asset('resources/images/rocketboost-logo.png') }}" alt="RocketBoost" class="mb-10 w-full max-w-[632px] rounded-lg">
   <section class="max-w-[760px]">
     <p class="text-sm font-semibold uppercase tracking-wide text-accent">The RocketBooster family</p>
     <h1 class="page-title mt-3">Tools for Rocket.rs, the Rust web framework</h1>

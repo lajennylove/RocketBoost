@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title') · Rocket Boost</title>
     <meta name="description" content="Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.">
+    <link rel="icon" href="{{ asset('resources/images/favicon.ico') }}" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('resources/images/favicon-32.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('resources/images/apple-touch-icon.png') }}">
     @vite(['resources/css/app.css'])
   </head>
   <body class="flex min-h-screen flex-col">
     <header class="border-b border-hairline bg-header">
       <div class="mx-auto flex max-w-[1080px] flex-wrap items-center gap-x-8 gap-y-2 px-4 py-4 md:px-6">
-        <a href="/" class="text-[17px] font-bold text-heading no-underline hover:no-underline">Rocket Boost</a>
+        <a href="/" class="flex items-center gap-2 text-[17px] font-bold text-heading no-underline hover:no-underline">
+          <img src="{{ asset('resources/images/rocketboost-mark.png') }}" alt="" class="h-10 w-auto">
+          Rocket Boost
+        </a>
         <nav class="flex flex-wrap gap-x-6 gap-y-1 text-[15px]" aria-label="Main">
           <a href="/" class="text-text no-underline hover:text-heading hover:underline">Home</a>
           <a href="/about" class="text-text no-underline hover:text-heading hover:underline">About</a>
