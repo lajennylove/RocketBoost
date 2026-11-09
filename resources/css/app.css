@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Design tokens from Propel's docs app (examples/propel), light theme. The
+/* Design tokens from Propel's docs app (the RocketPropel repository), light theme. The
    RocketBooster sites share these, so this site matches them. */
 @theme {
     --font-sans: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
