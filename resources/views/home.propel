@@ -11,7 +11,7 @@
 @endsection
 @section('content')
   <img src="{{ asset('resources/images/rocketboost-logo.png') }}" alt="RocketBoost" class="mx-auto mb-10 block w-full max-w-[632px]">
-  <section class="max-w-[760px]">
+  <section>
     <p class="text-sm font-semibold uppercase tracking-wide text-accent">The RocketBooster family</p>
     <h1 class="page-title mt-3">Tools for Rocket.rs, the Rust web framework</h1>
     <p class="mt-4 text-sm text-text">Latest Release: 🎉 Propel v0.2.0 (Nov 9, 2026) · Ignite v0.1.0 (Nov 9, 2026)</p>
@@ -37,7 +37,7 @@
     </article>
   </section>
 
-  <section class="mt-12 max-w-[760px]">
+  <section class="mt-12">
     <h2 class="section-title">About this site</h2>
     <p>rocketboost.rs is the home page of the family. It is a Rocket app that renders its pages with Propel. The About page says what is built and what is not yet. The Documentation page links to the docs for each project.</p>
     <p class="mt-6 flex flex-wrap gap-3">
@@ -45,7 +45,7 @@
       <a href="/about" class="button bg-white text-accent hover:bg-header hover:text-heading hover:border-accent">About the family</a>
     </p>
   </section>
-  <section class="mt-12 max-w-[760px]">
+  <section class="mt-12">
     <h2 class="section-title">Built with</h2>
     <ul class="mt-6 grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3">
       <li>
@@ -87,7 +87,7 @@
     </ul>
   </section>
 
-  <footer class="mt-16 max-w-[760px] border-t border-hairline pt-6">
+  <footer class="mt-16 border-t border-hairline pt-6">
     <h2 class="section-title">Find me</h2>
     <ul class="mt-4 flex flex-wrap gap-6">
       <li><a href="https://github.com/lajennylove" class="text-link">GitHub: lajennylove</a></li>
