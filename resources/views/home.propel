@@ -46,9 +46,7 @@
       </li>
       <li>
         <a href="https://rocket.rs" class="flex items-center gap-3 text-link" title="Rocket.rs">
-          <span class="flex h-10 items-center rounded bg-heading px-3">
-            <img src="{{ asset('resources/images/brand/rocket-logo.svg') }}" alt="Rocket logo" class="h-5 w-auto">
-          </span>
+          <img src="{{ asset('resources/images/brand/rocket-logo-small.svg') }}" alt="Rocket logo" class="h-10 w-auto">
           <span>Rocket.rs</span>
         </a>
       </li>
@@ -60,13 +58,13 @@
       </li>
       <li>
         <a href="https://vite.dev" class="flex items-center gap-3 text-link" title="Vite.js">
-          <img src="{{ asset('resources/images/brand/vite.svg') }}" alt="" class="h-10 w-10">
+          <img src="{{ asset('resources/images/brand/vite-logo.svg') }}" alt="" class="h-10 w-10">
           <span>Vite.js</span>
         </a>
       </li>
       <li>
         <a href="https://tailwindcss.com" class="flex items-center gap-3 text-link" title="Tailwind CSS">
-          <img src="{{ asset('resources/images/brand/tailwindcss.svg') }}" alt="" class="h-10 w-10">
+          <img src="{{ asset('resources/images/brand/tailwind-mark.svg') }}" alt="" class="h-10 w-10">
           <span>Tailwind CSS</span>
         </a>
       </li>
