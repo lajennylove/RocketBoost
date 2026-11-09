@@ -37,40 +37,40 @@
   </section>
   <section class="mt-12 max-w-[760px]">
     <h2 class="section-title">Built with</h2>
-    <ul class="mt-6 flex flex-wrap items-center gap-8">
+    <ul class="mt-6 grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3">
       <li>
         <a href="https://www.rust-lang.org" class="flex items-center gap-3 text-link" title="Rust">
-          <img src="{{ asset('resources/images/brand/rust.svg') }}" alt="" class="h-10 w-10">
+          <img src="{{ asset('resources/images/brand/rust.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Rust</span>
         </a>
       </li>
       <li>
         <a href="https://rocket.rs" class="flex items-center gap-3 text-link" title="Rocket.rs">
-          <img src="{{ asset('resources/images/brand/rocket-logo-small.svg') }}" alt="Rocket logo" class="h-10 w-auto">
+          <img src="{{ asset('resources/images/brand/rocket-logo-small.svg') }}" alt="Rocket logo" class="h-10 w-16 object-contain">
           <span>Rocket.rs</span>
         </a>
       </li>
       <li>
         <a href="https://diesel.rs" class="flex items-center gap-3 text-link" title="Diesel">
-          <img src="{{ asset('resources/images/brand/diesel.png') }}" alt="" class="h-10 w-10">
+          <img src="{{ asset('resources/images/brand/diesel.png') }}" alt="" class="h-10 w-16 object-contain">
           <span>Diesel</span>
         </a>
       </li>
       <li>
         <a href="https://vite.dev" class="flex items-center gap-3 text-link" title="Vite.js">
-          <img src="{{ asset('resources/images/brand/vite-logo.svg') }}" alt="" class="h-10 w-10">
+          <img src="{{ asset('resources/images/brand/vite-logo.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Vite.js</span>
         </a>
       </li>
       <li>
         <a href="https://tailwindcss.com" class="flex items-center gap-3 text-link" title="Tailwind CSS">
-          <img src="{{ asset('resources/images/brand/tailwind-mark.svg') }}" alt="" class="h-10 w-10">
+          <img src="{{ asset('resources/images/brand/tailwind-mark.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Tailwind CSS</span>
         </a>
       </li>
       <li>
         <a href="https://laravel.com/docs/vite" class="flex items-center gap-3 text-link" title="Laravel Vite">
-          <img src="{{ asset('resources/images/brand/laravel.svg') }}" alt="" class="h-10 w-10">
+          <img src="{{ asset('resources/images/brand/laravel.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Laravel Vite</span>
         </a>
       </li>
