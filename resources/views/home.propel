@@ -1,5 +1,14 @@
 @extends('layouts.app')
 @section('title')Home@endsection
+@section('description')Rocket Boost is the home of the RocketBooster family for Rocket.rs: Propel, a templating engine, and Ignite, an admin panel still in development.@endsection
+@section('schema')
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://rocketboost.rs/#website", "url": "https://rocketboost.rs", "name": "Rocket Boost", "description": "Rocket Boost is the home of the RocketBooster family for Rocket.rs: Propel, a templating engine, and Ignite, an admin panel still in development.", "inLanguage": "en", "publisher": {"@id": "https://rocketboost.rs/#organization"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Organization", "@id": "https://rocketboost.rs/#organization", "name": "Rocket Boost", "url": "https://rocketboost.rs", "logo": "https://rocketboost.rs/build/resources/images/rocketboost-logo.png", "sameAs": ["https://github.com/lajennylove", "https://www.linkedin.com/in/lajennylove/", "https://x.com/la_jennylove", "https://lajennylove.com"]}
+</script>
+@endsection
 @section('content')
   <img src="{{ asset('resources/images/rocketboost-logo.png') }}" alt="RocketBoost" class="mb-10 w-full max-w-[632px] rounded-lg">
   <section class="max-w-[760px]">

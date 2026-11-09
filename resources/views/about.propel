@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('title')About@endsection
+@section('path')/about@endsection
+@section('description')What the RocketBooster family is, what Propel and Ignite have built so far, and what is not built yet, such as Propel components and slots.@endsection
 @section('content')
   <section class="max-w-[760px]">
     <h1 class="page-title">About the RocketBooster family</h1>

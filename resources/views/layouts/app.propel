@@ -4,10 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title') · Rocket Boost</title>
-    <meta name="description" content="Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.">
+    <meta name="description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.')">
+    <meta name="robots" content="@yield('robots', 'index,follow')">
+    <link rel="canonical" href="https://rocketboost.rs@yield('path', '')">
+    <meta name="theme-color" content="#3d50f5">
+    <meta property="og:site_name" content="Rocket Boost">
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    <meta property="og:title" content="@yield('title') · Rocket Boost">
+    <meta property="og:description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.')">
+    <meta property="og:url" content="https://rocketboost.rs@yield('path', '')">
+    <meta property="og:image" content="https://rocketboost.rs/build/resources/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The Rocket Boost banner: a rocket above ROCKETBOOST, Ecosystem for Rocket.rs">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title') · Rocket Boost">
+    <meta name="twitter:description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.')">
+    <meta name="twitter:image" content="https://rocketboost.rs/build/resources/images/og-image.png">
     <link rel="icon" href="{{ asset('resources/images/favicon.ico') }}" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('resources/images/favicon-32.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('resources/images/apple-touch-icon.png') }}">
+    @hasSection('schema')
+    @yield('schema')
+    @endif
+    @sectionMissing('schema')
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "WebPage", "name": "@yield('title') · Rocket Boost", "url": "https://rocketboost.rs@yield('path', '')", "description": "@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.')"}
+    </script>
+    @endif
     @vite(['resources/css/app.css'])
   </head>
   <body class="flex min-h-screen flex-col">

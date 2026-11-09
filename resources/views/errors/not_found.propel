@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('title')Page not found@endsection
+@section('robots')noindex,follow@endsection
+@section('description')There is no page at this address on Rocket Boost, the home of the RocketBooster family. This page links to the home page and the documentation.@endsection
 @section('content')
   <section class="max-w-[760px]">
     <h1 class="page-title">Page not found</h1>

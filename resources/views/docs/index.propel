@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('title')Documentation@endsection
+@section('path')/docs@endsection
+@section('og_type')article@endsection
+@section('description')Links to the Propel and Ignite documentation on their own sites, covering installation, syntax, layouts, resources, forms, tables and views.@endsection
 @section('content')
   <section class="max-w-[760px]">
     <h1 class="page-title">Documentation</h1>
