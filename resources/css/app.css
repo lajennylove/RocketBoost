@@ -5,8 +5,8 @@
 @theme {
     --font-sans: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
     --color-text: #353841;
-    --color-heading: #17181c;
-    --color-accent: #3d50f5;
+    --color-heading: #111111;
+    --color-accent: #d33847;
     --color-header: #f6f7f9;
     --color-hairline: #e1e4ea;
 }
