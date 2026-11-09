@@ -6,11 +6,11 @@
 {"@context": "https://schema.org", "@type": "WebSite", "@id": "https://rocketboost.rs/#website", "url": "https://rocketboost.rs", "name": "Rocket Boost", "description": "Rocket Boost is the home of the RocketBooster family for Rocket.rs: Propel, a templating engine, and Ignite, an admin panel still in development.", "inLanguage": "en", "publisher": {"@id": "https://rocketboost.rs/#organization"}}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "Organization", "@id": "https://rocketboost.rs/#organization", "name": "Rocket Boost", "url": "https://rocketboost.rs", "logo": "https://rocketboost.rs/build/resources/images/rocketboost-logo.png", "sameAs": ["https://github.com/lajennylove", "https://www.linkedin.com/in/lajennylove/", "https://x.com/la_jennylove", "https://lajennylove.com"]}
+{"@context": "https://schema.org", "@type": "Organization", "@id": "https://rocketboost.rs/#organization", "name": "Rocket Boost", "url": "https://rocketboost.rs", "logo": "https://rocketboost.rs/build/resources/images/rocketboost-logo.webp", "sameAs": ["https://github.com/lajennylove", "https://www.linkedin.com/in/lajennylove/", "https://x.com/la_jennylove", "https://lajennylove.com"]}
 </script>
 @endsection
 @section('content')
-  <img src="{{ asset('resources/images/rocketboost-logo.png') }}" alt="RocketBoost" class="mx-auto mb-10 block w-full max-w-[632px]">
+  <img src="{{ asset('resources/images/rocketboost-logo.webp') }}" alt="RocketBoost" class="mx-auto mb-10 block w-full max-w-[632px]" width="632" height="548" fetchpriority="high">
   <section>
     <p class="text-sm font-semibold uppercase tracking-wide text-accent">The RocketBooster family</p>
     <h1 class="page-title mt-3">Tools for Rocket.rs, the Rust web framework</h1>
@@ -62,7 +62,7 @@
       </li>
       <li class="flex justify-center">
         <a href="https://diesel.rs" class="flex items-center gap-3 text-link" title="Diesel">
-          <img src="{{ asset('resources/images/brand/diesel.png') }}" alt="" class="h-10 w-16 object-contain">
+          <img src="{{ asset('resources/images/brand/diesel.webp') }}" alt="" class="h-10 w-16 object-contain">
           <span>Diesel</span>
         </a>
       </li>
