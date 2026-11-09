@@ -1,0 +1,40 @@
+@extends('layouts.app')
+@section('title')Documentation@endsection
+@section('content')
+  <section class="max-w-[760px]">
+    <h1 class="page-title">Documentation</h1>
+    <p class="mt-5 text-lg">Each project has its own docs site. The links below open the page on that site.</p>
+  </section>
+
+  <section class="max-w-[760px]">
+    <h2 class="section-title">Propel, the templating engine</h2>
+    <p>The Propel docs cover installation, Vite and Tailwind, the syntax, layouts, context, components, and assets. The example app is on the same site.</p>
+    <ul class="mt-4">
+      <li><a href="https://propel.rocketboost.rs/docs/install">Installation and configuration</a></li>
+      <li><a href="https://propel.rocketboost.rs/docs/vite-tailwind">Vite and Tailwind</a></li>
+      <li><a href="https://propel.rocketboost.rs/docs/syntax">Syntax overview</a></li>
+      <li><a href="https://propel.rocketboost.rs/docs/layouts">Layouts and sections</a></li>
+      <li><a href="https://propel.rocketboost.rs/docs/context">Context and composers</a></li>
+      <li><a href="https://propel.rocketboost.rs/docs/components">Components and reuse</a></li>
+      <li><a href="https://propel.rocketboost.rs/docs/assets">Images, fonts and assets</a></li>
+      <li><a href="https://propel.rocketboost.rs">The example app</a></li>
+    </ul>
+  </section>
+
+  <section class="max-w-[760px]">
+    <h2 class="section-title">Ignite, the admin panel</h2>
+    <p>The Ignite docs cover the panel, the resources and the views. Each page says what is built and what is not.</p>
+    <ul class="mt-4">
+      <li><a href="https://ignite.rocketboost.rs/docs/introduction">Introduction</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/install">Installation</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/panel">Panel</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/resources">Resources</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/forms">Forms</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/tables">Tables</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/actions">Actions</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/notifications">Notifications</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/widgets">Widgets</a></li>
+      <li><a href="https://ignite.rocketboost.rs/docs/views">Views</a></li>
+    </ul>
+  </section>
+@endsection

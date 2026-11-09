@@ -1,0 +1,37 @@
+@extends('layouts.app')
+@section('title')Home@endsection
+@section('content')
+  <section class="max-w-[760px]">
+    <p class="text-sm font-semibold uppercase tracking-wide text-accent">The RocketBooster family</p>
+    <h1 class="page-title mt-3">Tools for Rocket.rs, the Rust web framework</h1>
+    <p class="mt-5 text-lg">The RocketBooster family has two projects. Propel is the templating engine that renders the views. Ignite is an admin panel for Rocket, and it is built on Propel templates.</p>
+  </section>
+
+  <section class="mt-12 grid gap-6 md:grid-cols-2">
+    <article class="panel">
+      <h2 class="text-xl font-semibold text-heading">Propel</h2>
+      <p class="mt-3">The templating engine. Propel is a Blade-inspired templating system for Rocket.rs. Templates compile to typed Rust views, so a view's structure is checked when the app is built.</p>
+      <p class="mt-4">
+        <a href="https://propel.rocketboost.rs" class="text-link">Propel docs and example</a>
+      </p>
+    </article>
+
+    <article class="panel">
+      <h2 class="text-xl font-semibold text-heading">Ignite</h2>
+      <p class="mt-3">The admin panel. Ignite builds a back office for a MariaDB or MySQL table: a sign-in page, a dashboard, and screens to list, search, sort, create, edit and delete its rows.</p>
+      <p class="mt-3">Ignite is in development. Its docs say which parts are built and which are not yet.</p>
+      <p class="mt-4">
+        <a href="https://ignite.rocketboost.rs" class="text-link">Ignite docs</a>
+      </p>
+    </article>
+  </section>
+
+  <section class="mt-12 max-w-[760px]">
+    <h2 class="section-title">About this site</h2>
+    <p>rocketboost.rs is the home page of the family. It is a Rocket app that renders its pages with Propel. The About page says what is built and what is not yet. The Documentation page links to the docs for each project.</p>
+    <p class="mt-6 flex flex-wrap gap-3">
+      <a href="/docs" class="button">Documentation</a>
+      <a href="/about" class="button bg-white text-accent hover:bg-header hover:text-heading hover:border-accent">About the family</a>
+    </p>
+  </section>
+@endsection

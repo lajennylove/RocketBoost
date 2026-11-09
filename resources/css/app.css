@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Design tokens from Propel's docs app (examples/propel), light theme. The
+   RocketBooster sites share these, so this site matches them. */
+@theme {
+    --font-sans: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+    --color-text: #353841;
+    --color-heading: #17181c;
+    --color-accent: #3d50f5;
+    --color-header: #f6f7f9;
+    --color-hairline: #e1e4ea;
+}
+
+/* The views are the only place classes are written. Tailwind also finds them
+   on its own, but naming the folder keeps the build correct if that changes. */
+@source "../views";
+
+@layer base {
+    body {
+        @apply bg-white font-sans text-[16px] leading-7 text-text antialiased;
+    }
+
+    a {
+        @apply text-accent underline-offset-2 hover:underline;
+    }
+}
+
+@layer components {
+    /* Page title: the large heading at the top of each page. */
+    .page-title {
+        @apply text-4xl leading-tight font-semibold text-heading md:text-[42px];
+    }
+
+    /* Section heading inside a page. */
+    .section-title {
+        @apply mt-12 mb-3 text-2xl font-semibold text-heading;
+    }
+
+    /* A bordered panel for one project on the home page. */
+    .panel {
+        @apply flex flex-col rounded-[2px] border border-hairline bg-header p-6;
+    }
+
+    /* A call to action: a link that reads as a button. */
+    .button {
+        @apply inline-flex items-center rounded-[2px] border border-accent bg-accent px-4 py-2 text-[15px] font-semibold text-white no-underline hover:bg-heading hover:border-heading hover:text-white;
+    }
+
+    /* A plain link inside running text, without the default underline. */
+    .text-link {
+        @apply font-semibold text-accent underline-offset-2 hover:underline;
+    }
+}

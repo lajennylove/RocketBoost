@@ -1,0 +1,8 @@
+/target
+/node_modules
+/public/build
+/public/hot
+.env
+.env.*
+.cargo/config.toml
+/.playwright-mcp

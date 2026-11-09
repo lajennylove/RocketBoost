@@ -1,0 +1,17 @@
+[package]
+name = "rocketboost"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+# The short rev is the one propel_rocket and the other RocketBooster repos use.
+# Cargo treats a short and a full rev as two sources, so both must be written
+# the same way. Cargo.lock pins the full commit, 3a54d079aef060a8f732bd04ea54b0581a604087.
+rocket = { git = "https://github.com/rwf2/Rocket", rev = "3a54d079" }
+propel_rocket = { git = "https://github.com/lajennylove/propel", rev = "e0fb10893095a4b66996d35efb45cf0dd466ccdd" }
+propel_runtime = { git = "https://github.com/lajennylove/propel", rev = "e0fb10893095a4b66996d35efb45cf0dd466ccdd" }
+serde = { version = "1", features = ["derive"] }
+
+[build-dependencies]
+propel_compiler = { git = "https://github.com/lajennylove/propel", rev = "e0fb10893095a4b66996d35efb45cf0dd466ccdd" }

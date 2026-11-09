@@ -1,0 +1,42 @@
+@extends('layouts.app')
+@section('title')About@endsection
+@section('content')
+  <section class="max-w-[760px]">
+    <h1 class="page-title">About the RocketBooster family</h1>
+    <p class="mt-5 text-lg">Two projects for Rocket.rs, the Rust web framework. Both run on the same Rocket revision and the same Propel commit, and this site does too.</p>
+  </section>
+
+  <section class="max-w-[760px]">
+    <h2 class="section-title">Propel, the templating engine</h2>
+    <p>Propel is a Blade-inspired templating system for Rocket.rs. Templates compile to typed Rust views. A release build renders the compiled views, with no template interpreter, so a release binary does not read view files at run time.</p>
+    <p class="mt-4 font-semibold text-heading">Not built yet</p>
+    <ul>
+      <li>Components and slots, the &lt;x-component&gt; syntax.</li>
+      <li>The syntax is still a draft, and Blade compatibility is an open decision. Views written today may need edits when it changes.</li>
+    </ul>
+    <p class="mt-4">
+      The source is on <a href="https://github.com/lajennylove/propel">GitHub</a>. The docs and an example app are on <a href="https://propel.rocketboost.rs">propel.rocketboost.rs</a>.
+    </p>
+  </section>
+
+  <section class="max-w-[760px]">
+    <h2 class="section-title">Ignite, the admin panel</h2>
+    <p>Ignite is an admin panel for Rocket, built on Propel templates and Diesel. Give it a MariaDB or MySQL table and it builds a back office for that table. Ignite supports MariaDB and MySQL only.</p>
+    <p class="mt-4 font-semibold text-heading">Built</p>
+    <ul>
+      <li>The panel, its resources and the derive that writes a resource from a Diesel model.</li>
+      <li>A dashboard with stat cards and tables of the latest records.</li>
+      <li>Sign-in with server-side sessions, form tokens, and login throttling.</li>
+    </ul>
+    <p class="mt-4 font-semibold text-heading">Left out of version 1</p>
+    <ul>
+      <li>Infolists, a read-only view of one record.</li>
+      <li>Several panels, themes and translations.</li>
+      <li>Relations between tables, and file uploads.</li>
+      <li>Filters and bulk actions. The widgets are stat cards and tables, so there are no charts.</li>
+    </ul>
+    <p class="mt-4">
+      The docs are on <a href="https://ignite.rocketboost.rs">ignite.rocketboost.rs</a>. The source is on <a href="https://github.com/lajennylove/Ignite">GitHub</a>.
+    </p>
+  </section>
+@endsection

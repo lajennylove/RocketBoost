@@ -1,0 +1,13 @@
+# Rebuild and restart on every change to Rust code or to a view. A debug build
+# reads the views from resources/views on each request, so a view edit does not
+# need a restart there. A release build compiles the views into the binary, so
+# a view edit needs a rebuild of that build.
+# Run `bacon` from this directory.
+default_job = "run"
+
+[jobs.run]
+command = ["cargo", "run", "--color", "always"]
+need_stdout = true
+background = true
+on_change_strategy = "kill_then_restart"
+watch = ["src", "resources/views"]

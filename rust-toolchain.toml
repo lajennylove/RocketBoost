@@ -1,0 +1,4 @@
+# Installed automatically by rustup the first time you build here.
+[toolchain]
+channel = "stable"
+components = ["clippy", "rustfmt"]

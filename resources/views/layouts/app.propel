@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@yield('title') · Rocket Boost</title>
+    <meta name="description" content="Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.">
+    @vite(['resources/css/app.css'])
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <header class="border-b border-hairline bg-header">
+      <div class="mx-auto flex max-w-[1080px] flex-wrap items-center gap-x-8 gap-y-2 px-4 py-4 md:px-6">
+        <a href="/" class="text-[17px] font-bold text-heading no-underline hover:no-underline">Rocket Boost</a>
+        <nav class="flex flex-wrap gap-x-6 gap-y-1 text-[15px]" aria-label="Main">
+          <a href="/" class="text-text no-underline hover:text-heading hover:underline">Home</a>
+          <a href="/about" class="text-text no-underline hover:text-heading hover:underline">About</a>
+          <a href="/docs" class="text-text no-underline hover:text-heading hover:underline">Documentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-[1080px] flex-1 px-4 py-10 md:px-6 md:py-14">
+      @yield('content')
+    </main>
+
+    <footer class="border-t border-hairline bg-header">
+      <div class="mx-auto flex max-w-[1080px] flex-col gap-4 px-4 py-8 text-[15px] md:flex-row md:items-center md:justify-between md:px-6">
+        <p>Rocket Boost, the home of the RocketBooster family for Rocket.rs.</p>
+        <nav class="flex flex-wrap gap-x-6 gap-y-1" aria-label="Projects">
+          <a href="https://propel.rocketboost.rs" class="text-accent">Propel</a>
+          <a href="https://ignite.rocketboost.rs" class="text-accent">Ignite</a>
+          <a href="https://github.com/lajennylove" class="text-accent">GitHub</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script data-goatcounter="https://rocketboost.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  </body>
+</html>
