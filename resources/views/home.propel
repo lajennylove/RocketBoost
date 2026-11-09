@@ -35,4 +35,36 @@
       <a href="/about" class="button bg-white text-accent hover:bg-header hover:text-heading hover:border-accent">About the family</a>
     </p>
   </section>
+  <section class="mt-12 max-w-[760px]">
+    <h2 class="section-title">Built with</h2>
+    <ul class="mt-6 flex flex-wrap items-center gap-8">
+      <li>
+        <a href="https://www.rust-lang.org" class="flex items-center gap-3 text-link" title="Rust">
+          <img src="{{ asset('resources/images/brand/rust.svg') }}" alt="" class="h-10 w-10">
+          <span>Rust</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://rocket.rs" class="flex items-center gap-3 text-link" title="Rocket.rs">
+          <span class="flex h-10 items-center rounded bg-heading px-3">
+            <img src="{{ asset('resources/images/brand/rocket-logo.svg') }}" alt="Rocket logo" class="h-5 w-auto">
+          </span>
+          <span>Rocket.rs</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://diesel.rs" class="flex items-center gap-3 text-link" title="Diesel">
+          <img src="{{ asset('resources/images/brand/diesel.png') }}" alt="" class="h-10 w-10">
+          <span>Diesel</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="mt-16 max-w-[760px] border-t border-hairline pt-6">
+    <h2 class="section-title">Find me</h2>
+    <ul class="mt-4 flex flex-wrap gap-6">
+      <li><a href="https://github.com/lajennylove" class="text-link">GitHub: lajennylove</a></li>
+    </ul>
+  </footer>
 @endsection

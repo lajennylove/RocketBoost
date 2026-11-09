@@ -1,0 +1,43 @@
+name: Deploy RocketBoost home page
+
+# Deploys rocketboost.rs. The server pulls origin/main, rebuilds the assets and the
+# binary, and restarts the rocketboost-home service, which the root domain proxies to.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "resources/**"
+      - "build.rs"
+      - "Cargo.toml"
+      - "Cargo.lock"
+      - "package.json"
+      - "package-lock.json"
+      - "vite.config.js"
+      - ".github/workflows/deploy-rocketboost-home.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-rocketboost-home
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: rocketboost.rs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install deploy key and host key
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_rocketboost_home
+          chmod 600 ~/.ssh/deploy_rocketboost_home
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+
+      - name: Run the deploy script on the server
+        # The server's forced command runs /usr/local/bin/deploy-rocketboost-home, so the
+        # command given here is ignored.
+        run: ssh -i ~/.ssh/deploy_rocketboost_home -o IdentitiesOnly=yes -o BatchMode=yes deploy@178.156.156.18
