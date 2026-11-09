@@ -58,6 +58,24 @@
           <span>Diesel</span>
         </a>
       </li>
+      <li>
+        <a href="https://vite.dev" class="flex items-center gap-3 text-link" title="Vite.js">
+          <img src="{{ asset('resources/images/brand/vite.svg') }}" alt="" class="h-10 w-10">
+          <span>Vite.js</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://tailwindcss.com" class="flex items-center gap-3 text-link" title="Tailwind CSS">
+          <img src="{{ asset('resources/images/brand/tailwindcss.svg') }}" alt="" class="h-10 w-10">
+          <span>Tailwind CSS</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://laravel.com/docs/vite" class="flex items-center gap-3 text-link" title="Laravel Vite">
+          <img src="{{ asset('resources/images/brand/laravel.svg') }}" alt="" class="h-10 w-10">
+          <span>Laravel Vite</span>
+        </a>
+      </li>
     </ul>
   </section>
 
