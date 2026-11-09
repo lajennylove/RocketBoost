@@ -81,6 +81,7 @@
     <h2 class="section-title">Find me</h2>
     <ul class="mt-4 flex flex-wrap gap-6">
       <li><a href="https://github.com/lajennylove" class="text-link">GitHub: lajennylove</a></li>
+      <li><a href="https://www.linkedin.com/in/lajennylove/" class="text-link">LinkedIn: lajennylove</a></li>
     </ul>
   </footer>
 @endsection
