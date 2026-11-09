@@ -1,6 +1,6 @@
 # Rocket Boost home page
 
-The home page and documentation index for [rocketboost.rs](https://rocketboost.rs), the RocketBooster family of projects for Rocket.rs. It is a Rocket app that renders [Propel](https://github.com/lajennylove/propel) views, with Tailwind and Vite for the styles, built the same way as the Propel and Ignite docs sites.
+The home page and documentation index for [rocketboost.rs](https://rocketboost.rs), the RocketBooster family of projects for Rocket.rs. It is a Rocket app that renders [Propel](https://github.com/lajennylove/Propel) views, with Tailwind and Vite for the styles, built the same way as the Propel and Ignite docs sites.
 
 Pages: `/` (home), `/about` (what the family is, and what is not built yet), `/docs` (links to the Propel and Ignite docs). Any other path is a 404 page.
 
@@ -29,4 +29,4 @@ Every page has the GoatCounter script just before `</body>`, in `resources/views
 
 ## Deploying
 
-Not set up. The root site on the server is still a static HTML page. Serving this Rocket app from rocketboost.rs needs a decision, and no deploy step has been run.
+Pushing to `main` deploys the site. A GitHub Action runs a deploy script on the server, which pulls the repository, builds the assets and the binary, and restarts the service behind rocketboost.rs.
