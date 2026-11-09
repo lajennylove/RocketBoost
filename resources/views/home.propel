@@ -5,6 +5,7 @@
   <section class="max-w-[760px]">
     <p class="text-sm font-semibold uppercase tracking-wide text-accent">The RocketBooster family</p>
     <h1 class="page-title mt-3">Tools for Rocket.rs, the Rust web framework</h1>
+    <p class="mt-4 text-sm text-text">Latest Release: 🎉 Propel v0.2.0 (Nov 9, 2026) · Ignite v0.1.0 (Nov 9, 2026)</p>
     <p class="mt-5 text-lg">The RocketBooster family has two projects. Propel is the templating engine that renders the views. Ignite is an admin panel for Rocket, and it is built on Propel templates.</p>
   </section>
 
