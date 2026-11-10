@@ -1,0 +1,8 @@
+# /home/deploy/.ssh/authorized_keys, two keys per app, each with a forced command.
+#
+# 1. Upload key: rsync only, and only into this app's releases folder (rrsync is shipped
+#    with the rsync package; its path on Ubuntu is /usr/share/doc/rsync/scripts/rrsync).
+command="/usr/share/doc/rsync/scripts/rrsync -wo /home/deploy/apps/<app>/releases",restrict ssh-ed25519 AAAA... <app>-ci-upload
+#
+# 2. Activation key: runs activate.sh for this app only, whatever the client sends.
+command="/home/deploy/bin/activate.sh <app>",restrict ssh-ed25519 AAAA... <app>-ci-activate

@@ -1,0 +1,94 @@
+# GitHub Actions template: build a Rocket app in CI, upload the release to the server,
+# and switch to it there. The server only serves files; it never compiles.
+#
+# Copy to .github/workflows/deploy.yml in your repository and fill in the values marked
+# TODO. See README.md in this folder for the one-time server set-up and the secrets.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# One deploy at a time per branch. A running deploy is never cancelled half-way.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  APP_NAME: my-app          # TODO: the app folder on the server, e.g. ignite-docs
+  BIN_NAME: my-app          # TODO: the cargo binary name, as in [[bin]] or the package name
+  EXTRA_BINS: ""            # TODO: other binaries the release needs, e.g. "ignite" for MIGRATE_BIN
+  DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}   # repository variable: the server's address
+  DEPLOY_USER: deploy
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04   # the server runs Ubuntu 24.04; match it so the binary runs there
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Node for the front-end assets
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build the front-end assets
+        if: hashFiles('package.json') != ''
+        run: |
+          npm ci
+          npm run build
+
+      - name: Build the release binary
+        run: cargo build --release --locked --bin "$BIN_NAME"
+
+      - name: Stage the release
+        run: |
+          rm -rf stage && mkdir stage
+          for bin in $BIN_NAME $EXTRA_BINS; do
+            cp "target/release/$bin" stage/
+          done
+          # Everything the app reads at run time goes here, e.g. the built assets.
+          if [ -d public ]; then cp -r public stage/; fi
+          ls -la stage
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release
+          path: stage
+          retention-days: 7
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment: production   # TODO: create this environment; add reviewers if you want approval
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: release
+          path: stage
+
+      - name: Install the SSH keys
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_UPLOAD_KEY }}" > ~/.ssh/upload
+          printf '%s\n' "${{ secrets.DEPLOY_ACTIVATE_KEY }}" > ~/.ssh/activate
+          printf '%s\n' "${{ secrets.DEPLOY_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/upload ~/.ssh/activate ~/.ssh/known_hosts
+
+      - name: Upload the release
+        # The upload key can only write into this app's releases folder, under the commit id.
+        run: |
+          rsync -az -e "ssh -i $HOME/.ssh/upload -o UserKnownHostsFile=$HOME/.ssh/known_hosts" \
+            stage/ "$DEPLOY_USER@$DEPLOY_HOST:$GITHUB_SHA/"
+
+      - name: Activate the release
+        # The activation key runs activate.sh for this app. The commit id is the command.
+        run: |
+          ssh -i "$HOME/.ssh/activate" -o UserKnownHostsFile="$HOME/.ssh/known_hosts" \
+            "$DEPLOY_USER@$DEPLOY_HOST" "$GITHUB_SHA"

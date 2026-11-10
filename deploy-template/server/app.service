@@ -1,0 +1,19 @@
+# systemd unit for one app. Copy to /etc/systemd/system/<service>.service, replacing
+# the placeholders in angle brackets, then run: sudo systemctl daemon-reload
+# The app runs from the `current` symlink, which activate.sh switches between releases.
+[Unit]
+Description=<App name> (Rocket)
+After=network.target
+
+[Service]
+User=deploy
+Group=deploy
+WorkingDirectory=/home/deploy/apps/<app>/current
+EnvironmentFile=/home/deploy/apps/<app>/shared/.env
+Environment=ROCKET_ADDRESS=127.0.0.1
+Environment=ROCKET_PORT=<port>
+ExecStart=/home/deploy/apps/<app>/current/<binary>
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,3 @@
+# /etc/sudoers.d/deploy-<app> (edit with visudo -f). Lets the deploy user restart only
+# this app's service, with no password. Nothing else.
+deploy ALL=(root) NOPASSWD: /bin/systemctl restart <app>.service
