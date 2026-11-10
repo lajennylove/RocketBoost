@@ -131,3 +131,4 @@ The release folder must still exist, which `KEEP` controls.
 - **`activate: ... is not healthy`:** the app did not answer its health URL. The script rolled
   back. Read the service log with `journalctl -u <app>.service -n 100`.
 - **The service does not start:** check `shared/.env` and the unit's `WorkingDirectory`.
+- **`status=203/EXEC` in the service log:** systemd found the binary but could not run it. The workflow restores the executable bit after download; check that the step is in your `deploy.yml`.

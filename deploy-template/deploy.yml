@@ -73,6 +73,13 @@ jobs:
           name: release
           path: stage
 
+      - name: Restore the executable bit
+        # Artifact downloads can drop the executable bit, and systemd then fails with 203/EXEC.
+        run: |
+          for bin in $BIN_NAME $EXTRA_BINS; do
+            chmod +x "stage/$bin"
+          done
+
       - name: Install the SSH keys
         run: |
           install -m 700 -d ~/.ssh
