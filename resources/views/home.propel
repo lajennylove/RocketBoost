@@ -49,37 +49,37 @@
     <h2 class="section-title">Built with</h2>
     <ul class="mt-6 grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3">
       <li class="flex justify-center">
-        <a href="https://www.rust-lang.org" class="flex items-center gap-3 text-link" title="Rust">
+        <a target="_new" rel="noopener" href="https://www.rust-lang.org" class="flex items-center gap-3 text-link" title="Rust">
           <img src="{{ asset('resources/images/brand/rust.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Rust</span>
         </a>
       </li>
       <li class="flex justify-center">
-        <a href="https://rocket.rs" class="flex items-center gap-3 text-link" title="Rocket.rs">
+        <a target="_new" rel="noopener" href="https://rocket.rs" class="flex items-center gap-3 text-link" title="Rocket.rs">
           <img src="{{ asset('resources/images/brand/rocket-logo-small.svg') }}" alt="Rocket logo" class="h-10 w-16 object-contain">
           <span>Rocket.rs</span>
         </a>
       </li>
       <li class="flex justify-center">
-        <a href="https://diesel.rs" class="flex items-center gap-3 text-link" title="Diesel">
+        <a target="_new" rel="noopener" href="https://diesel.rs" class="flex items-center gap-3 text-link" title="Diesel">
           <img src="{{ asset('resources/images/brand/diesel.webp') }}" alt="" class="h-10 w-16 object-contain">
           <span>Diesel</span>
         </a>
       </li>
       <li class="flex justify-center">
-        <a href="https://vite.dev" class="flex items-center gap-3 text-link" title="Vite.js">
+        <a target="_new" rel="noopener" href="https://vite.dev" class="flex items-center gap-3 text-link" title="Vite.js">
           <img src="{{ asset('resources/images/brand/vite-logo.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Vite.js</span>
         </a>
       </li>
       <li class="flex justify-center">
-        <a href="https://tailwindcss.com" class="flex items-center gap-3 text-link" title="Tailwind CSS">
+        <a target="_new" rel="noopener" href="https://tailwindcss.com" class="flex items-center gap-3 text-link" title="Tailwind CSS">
           <img src="{{ asset('resources/images/brand/tailwind-mark.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Tailwind CSS</span>
         </a>
       </li>
       <li class="flex justify-center">
-        <a href="https://laravel.com/docs/vite" class="flex items-center gap-3 text-link" title="Laravel Vite">
+        <a target="_new" rel="noopener" href="https://laravel.com/docs/vite" class="flex items-center gap-3 text-link" title="Laravel Vite">
           <img src="{{ asset('resources/images/brand/laravel.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Laravel Vite</span>
         </a>
@@ -90,10 +90,10 @@
   <footer class="mt-16 border-t border-hairline pt-6">
     <h2 class="section-title">Find me</h2>
     <ul class="mt-4 flex flex-wrap gap-6">
-      <li><a href="https://github.com/lajennylove" class="text-link">GitHub: lajennylove</a></li>
-      <li><a href="https://www.linkedin.com/in/lajennylove/" class="text-link">LinkedIn: lajennylove</a></li>
-      <li><a href="https://x.com/la_jennylove" class="text-link">X: @la_jennylove</a></li>
-      <li><a href="https://lajennylove.com" class="text-link">lajennylove.com</a></li>
+      <li><a target="_new" rel="noopener" href="https://github.com/lajennylove" class="text-link">GitHub: lajennylove</a></li>
+      <li><a target="_new" rel="noopener" href="https://www.linkedin.com/in/lajennylove/" class="text-link">LinkedIn: lajennylove</a></li>
+      <li><a target="_new" rel="noopener" href="https://x.com/la_jennylove" class="text-link">X: @la_jennylove</a></li>
+      <li><a target="_new" rel="noopener" href="https://lajennylove.com" class="text-link">lajennylove.com</a></li>
     </ul>
   </footer>
 @endsection

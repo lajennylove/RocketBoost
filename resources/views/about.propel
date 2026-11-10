@@ -17,7 +17,7 @@
       <li>The syntax is still a draft, and Blade compatibility is an open decision. Views written today may need edits when it changes.</li>
     </ul>
     <p class="mt-4">
-      The source is on <a href="https://github.com/lajennylove/propel">GitHub</a>. The docs and an example app are on <a href="https://propel.rocketboost.rs">propel.rocketboost.rs</a>.
+      The source is on <a target="_new" rel="noopener" href="https://github.com/lajennylove/propel">GitHub</a>. The docs and an example app are on <a href="https://propel.rocketboost.rs">propel.rocketboost.rs</a>.
     </p>
   </section>
 
@@ -38,7 +38,7 @@
       <li>Filters and bulk actions. The widgets are stat cards and tables, so there are no charts.</li>
     </ul>
     <p class="mt-4">
-      The docs are on <a href="https://ignite.rocketboost.rs">ignite.rocketboost.rs</a>. The source is on <a href="https://github.com/lajennylove/Ignite">GitHub</a>.
+      The docs are on <a href="https://ignite.rocketboost.rs">ignite.rocketboost.rs</a>. The source is on <a target="_new" rel="noopener" href="https://github.com/lajennylove/Ignite">GitHub</a>.
     </p>
   </section>
 @endsection
