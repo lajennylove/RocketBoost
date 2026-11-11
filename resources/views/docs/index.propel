@@ -2,7 +2,7 @@
 @section('title')Documentation@endsection
 @section('path')/docs@endsection
 @section('og_type')article@endsection
-@section('description')Links to the Propel, Ignite and Orbit documentation on their own sites, covering installation, syntax, layouts, resources, forms, tables, views and queries.@endsection
+@section('description')Links to the Propel, Ignite and Orbit documentation on their own sites, covering installation, syntax, layouts, resources, forms, tables, views, queries, models, transactions and migrations.@endsection
 @section('content')
   <section class="max-w-[760px]">
     <h1 class="page-title">Documentation</h1>
@@ -43,9 +43,18 @@
 
   <section class="max-w-[760px]">
     <h2 class="section-title">Orbit, the ORM</h2>
-    <p>The Orbit docs cover the ORM for Rocket.rs apps, starting with MySQL and MariaDB: connecting, models, queries and transactions.</p>
+    <p>The Orbit docs cover the ORM for Rocket.rs apps, with MySQL, MariaDB, PostgreSQL and SQLite: connecting, models, queries, transactions, errors, migrations, the blocking API and the differences from Laravel.</p>
     <ul class="mt-4">
       <li><a href="https://orbit.rocketboost.rs/docs/introduction">Introduction</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/install">Installation</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/connecting">Connecting</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/models">Models</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/queries">Queries</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/transactions">Transactions</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/errors">Errors</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/migrations">Migrations</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/blocking">Blocking API</a></li>
+      <li><a href="https://orbit.rocketboost.rs/docs/differences">Differences from Laravel</a></li>
     </ul>
   </section>
 @endsection
