@@ -46,14 +46,6 @@
   </section>
 
   <section class="mt-12">
-    <h2 class="section-title">About this site</h2>
-    <p>rocketboost.rs is the home page of the family. It is a Rocket app that renders its pages with Propel. The About page says what is built and what is not yet. The Documentation page links to the docs for each project.</p>
-    <p class="mt-6 flex flex-wrap gap-3">
-      <a href="/docs" class="button">Documentation</a>
-      <a href="/about" class="button bg-white text-accent hover:bg-header hover:text-heading hover:border-accent">About the family</a>
-    </p>
-  </section>
-  <section class="mt-12">
     <h2 class="section-title">Built with</h2>
     <ul class="mt-6 grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3">
       <li class="flex justify-center">
@@ -87,6 +79,14 @@
         </a>
       </li>
     </ul>
+  </section>
+  <section class="mt-12">
+    <h2 class="section-title">About this site</h2>
+    <p>rocketboost.rs is the home page of the family. It is a Rocket app that renders its pages with Propel. The About page says what is built and what is not yet. The Documentation page links to the docs for each project.</p>
+    <p class="mt-6 flex flex-wrap gap-3">
+      <a href="/docs" class="button">Documentation</a>
+      <a href="/about" class="button bg-white text-accent hover:bg-header hover:text-heading hover:border-accent">About the family</a>
+    </p>
   </section>
 
   <section class="mt-12">
