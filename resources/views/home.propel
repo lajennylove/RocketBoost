@@ -89,6 +89,34 @@
     </ul>
   </section>
 
+  <section class="mt-12">
+    <h2 class="section-title">Inspired by</h2>
+    <ul class="mt-6 grid grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-3">
+      <li class="flex justify-center">
+        <a target="_new" rel="noopener" href="https://laravel.com" class="flex items-center gap-3 text-link" title="Laravel">
+          <img src="{{ asset('resources/images/brand/laravel.svg') }}" alt="" class="h-10 w-16 object-contain">
+          <span>Laravel</span>
+        </a>
+      </li>
+      <li class="flex justify-center">
+        <a target="_new" rel="noopener" href="https://filamentphp.com" class="flex items-center gap-3 text-link" title="Filament">
+          <span>Filament</span>
+        </a>
+      </li>
+      <li class="flex justify-center">
+        <a target="_new" rel="noopener" href="https://roots.io/sage/" class="flex items-center gap-3 text-link" title="Roots Sage">
+          <span>Roots Sage</span>
+        </a>
+      </li>
+      <li class="flex justify-center">
+        <a target="_new" rel="noopener" href="https://diesel.rs" class="flex items-center gap-3 text-link" title="Diesel">
+          <img src="{{ asset('resources/images/brand/diesel.webp') }}" alt="" class="h-10 w-16 object-contain">
+          <span>Diesel</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
   <footer class="mt-16 border-t border-hairline pt-6">
     <h2 class="section-title">Find me</h2>
     <ul class="mt-4 flex flex-wrap gap-6">
