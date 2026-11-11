@@ -100,6 +100,7 @@
       </li>
       <li class="flex justify-center">
         <a target="_new" rel="noopener" href="https://filamentphp.com" class="flex items-center gap-3 text-link" title="Filament">
+          <img src="{{ asset('resources/images/brand/filament.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Filament</span>
         </a>
       </li>
