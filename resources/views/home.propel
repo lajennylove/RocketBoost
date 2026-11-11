@@ -69,9 +69,6 @@
         </a>
       </li>
       <li class="flex justify-center">
-        <a target="_new" rel="noopener" href="https://orbit.rocketboost.rs" class="flex items-center gap-3 text-link" title="Orbit">
-          <span>Orbit</span>
-        </a>
       </li>
       <li class="flex justify-center">
         <a target="_new" rel="noopener" href="https://vite.dev" class="flex items-center gap-3 text-link" title="Vite.js">
