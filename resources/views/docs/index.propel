@@ -2,7 +2,7 @@
 @section('title')Documentation@endsection
 @section('path')/docs@endsection
 @section('og_type')article@endsection
-@section('description')Links to the Propel and Ignite documentation on their own sites, covering installation, syntax, layouts, resources, forms, tables and views.@endsection
+@section('description')Links to the Propel, Ignite and Orbit documentation on their own sites, covering installation, syntax, layouts, resources, forms, tables, views and queries.@endsection
 @section('content')
   <section class="max-w-[760px]">
     <h1 class="page-title">Documentation</h1>
@@ -38,6 +38,14 @@
       <li><a href="https://ignite.rocketboost.rs/docs/notifications">Notifications</a></li>
       <li><a href="https://ignite.rocketboost.rs/docs/widgets">Widgets</a></li>
       <li><a href="https://ignite.rocketboost.rs/docs/views">Views</a></li>
+    </ul>
+  </section>
+
+  <section class="max-w-[760px]">
+    <h2 class="section-title">Orbit, the ORM</h2>
+    <p>The Orbit docs cover the ORM for Rocket.rs apps, starting with MySQL and MariaDB: connecting, models, queries and transactions.</p>
+    <ul class="mt-4">
+      <li><a href="https://orbit.rocketboost.rs/docs/introduction">Introduction</a></li>
     </ul>
   </section>
 @endsection

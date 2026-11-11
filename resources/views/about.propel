@@ -5,7 +5,7 @@
 @section('content')
   <section class="max-w-[760px]">
     <h1 class="page-title">About the RocketBooster family</h1>
-    <p class="mt-5 text-lg">Three projects for Rocket.rs, the Rust web framework. Orbit is an ORM for Rocket.rs apps, starting with MySQL and MariaDB, and it is the database layer for Ignite. Propel and Ignite run on the same Rocket revision and the same Propel commit, and this site does too.</p>
+    <p class="mt-5 text-lg">Three projects for Rocket.rs, the Rust web framework. Orbit is an ORM for Rocket.rs apps, starting with MySQL and MariaDB, and it is the database layer for Ignite. Ignite uses Rocket 0.5.2 and Propel 0.2.0 from crates.io. This site builds on Rocket and Propel from GitHub, at the revisions pinned in its Cargo.toml.</p>
   </section>
 
   <section class="max-w-[760px]">
@@ -39,6 +39,15 @@
     </ul>
     <p class="mt-4">
       The docs are on <a href="https://ignite.rocketboost.rs">ignite.rocketboost.rs</a>. The source is on <a target="_new" rel="noopener" href="https://github.com/lajennylove/Ignite">GitHub</a>.
+    </p>
+  </section>
+
+  <section class="max-w-[760px]">
+    <h2 class="section-title">Orbit, the ORM</h2>
+    <p>Orbit is an ORM for Rocket.rs apps, starting with MySQL and MariaDB. It maps tables to Rust types, with a query builder, transactions, migrations, and a blocking API for sync code. Its names follow Laravel's Eloquent and query builder, and it is the database layer for Ignite.</p>
+    <p class="mt-4">Orbit is at version 0.1.0 and is not yet published to crates.io. PostgreSQL and SQLite are planned after the MySQL work.</p>
+    <p class="mt-4">
+      The docs are on <a href="https://orbit.rocketboost.rs">orbit.rocketboost.rs</a>. The source is on <a target="_new" rel="noopener" href="https://github.com/lajennylove/Orbit">GitHub</a>.
     </p>
   </section>
 @endsection
