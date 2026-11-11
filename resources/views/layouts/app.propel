@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title') · Rocket Boost</title>
-    <meta name="description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.')">
+    <meta name="description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, Ignite, its admin panel, and Orbit, its database layer.')">
     <meta name="robots" content="@yield('robots', 'index,follow')">
     <link rel="canonical" href="https://rocketboost.rs@yield('path', '')">
     <meta name="theme-color" content="#3d50f5">
     <meta property="og:site_name" content="Rocket Boost">
     <meta property="og:type" content="@yield('og_type', 'website')">
     <meta property="og:title" content="@yield('title') · Rocket Boost">
-    <meta property="og:description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.')">
+    <meta property="og:description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, Ignite, its admin panel, and Orbit, its database layer.')">
     <meta property="og:url" content="https://rocketboost.rs@yield('path', '')">
     <meta property="og:image" content="https://rocketboost.rs/build/resources/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title') · Rocket Boost">
-    <meta name="twitter:description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.')">
+    <meta name="twitter:description" content="@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, Ignite, its admin panel, and Orbit, its database layer.')">
     <meta name="twitter:image" content="https://rocketboost.rs/build/resources/images/og-image.jpg">
     <link rel="icon" href="{{ asset('resources/images/favicon.ico') }}" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('resources/images/favicon-32.png') }}">
@@ -30,7 +30,7 @@
     @endif
     @sectionMissing('schema')
     <script type="application/ld+json">
-    {"@context": "https://schema.org", "@type": "WebPage", "name": "@yield('title') · Rocket Boost", "url": "https://rocketboost.rs@yield('path', '')", "description": "@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, and Ignite, its admin panel.')"}
+    {"@context": "https://schema.org", "@type": "WebPage", "name": "@yield('title') · Rocket Boost", "url": "https://rocketboost.rs@yield('path', '')", "description": "@yield('description', 'Rocket Boost is the home of the RocketBooster family: Propel, the templating engine for Rocket.rs, Ignite, its admin panel, and Orbit, its database layer.')"}
     </script>
     @endif
     @vite(['resources/css/app.css'])
@@ -60,6 +60,7 @@
         <nav class="flex flex-wrap gap-x-6 gap-y-1" aria-label="Projects">
           <a href="https://propel.rocketboost.rs" class="text-accent">Propel</a>
           <a href="https://ignite.rocketboost.rs" class="text-accent">Ignite</a>
+          <a href="https://orbit.rocketboost.rs" class="text-accent">Orbit</a>
           <a target="_new" rel="noopener" href="https://github.com/lajennylove" class="text-accent">GitHub</a>
         </nav>
       </div>

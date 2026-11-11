@@ -5,7 +5,7 @@
 @section('content')
   <section class="max-w-[760px]">
     <h1 class="page-title">About the RocketBooster family</h1>
-    <p class="mt-5 text-lg">Two projects for Rocket.rs, the Rust web framework. Both run on the same Rocket revision and the same Propel commit, and this site does too.</p>
+    <p class="mt-5 text-lg">Three projects for Rocket.rs, the Rust web framework. Orbit is an ORM for Rocket.rs apps, starting with MySQL and MariaDB, and it is the database layer for Ignite. Propel and Ignite run on the same Rocket revision and the same Propel commit, and this site does too.</p>
   </section>
 
   <section class="max-w-[760px]">
@@ -23,10 +23,10 @@
 
   <section class="max-w-[760px]">
     <h2 class="section-title">Ignite, the admin panel</h2>
-    <p>Ignite is an admin panel for Rocket, built on Propel templates and Diesel. Give it a MariaDB or MySQL table and it builds a back office for that table. Ignite supports MariaDB and MySQL only.</p>
+    <p>Ignite is an admin panel for Rocket, built on Propel templates and Orbit. Give it a MariaDB or MySQL table and it builds a back office for that table. Ignite supports MariaDB and MySQL only.</p>
     <p class="mt-4 font-semibold text-heading">Built</p>
     <ul>
-      <li>The panel, its resources and the derive that writes a resource from a Diesel model.</li>
+      <li>The panel, its resources and the derive that writes a resource from an Orbit model.</li>
       <li>A dashboard with stat cards and tables of the latest records.</li>
       <li>Sign-in with server-side sessions, form tokens, and login throttling.</li>
     </ul>
