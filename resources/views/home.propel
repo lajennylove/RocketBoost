@@ -23,7 +23,7 @@
       <h2 class="text-xl font-semibold text-heading">Propel</h2>
       <p class="mt-3">The templating engine. Propel is a Blade-inspired templating system for Rocket.rs. Templates compile to typed Rust views, so a view's structure is checked when the app is built.</p>
       <p class="mt-4">
-        <a href="https://propel.rocketboost.rs" class="text-link">Propel docs and example</a>
+        <a target="_new" rel="noopener" href="https://github.com/lajennylove/Propel" class="text-link">Propel on GitHub</a> · <a href="https://propel.rocketboost.rs" class="text-link">Propel docs</a> · <a target="_new" rel="noopener" href="https://github.com/lajennylove/RocketPropel" class="text-link">Propel example</a>
       </p>
     </article>
 
@@ -32,7 +32,7 @@
       <p class="mt-3">The admin panel. Ignite builds a back office for a MariaDB or MySQL table: a sign-in page, a dashboard, and screens to list, search, sort, create, edit and delete its rows.</p>
       <p class="mt-3">Ignite is in development. Its docs say which parts are built and which are not yet.</p>
       <p class="mt-4">
-        <a href="https://ignite.rocketboost.rs" class="text-link">Ignite docs</a>
+        <a target="_new" rel="noopener" href="https://github.com/lajennylove/Ignite" class="text-link">Ignite on GitHub</a> · <a href="https://ignite.rocketboost.rs" class="text-link">Ignite docs</a> · <a target="_new" rel="noopener" href="https://github.com/lajennylove/RocketIgniteExample" class="text-link">Ignite example</a>
       </p>
     </article>
 
@@ -40,7 +40,7 @@
       <h2 class="text-xl font-semibold text-heading">Orbit</h2>
       <p class="mt-3">The database layer. Orbit is an ORM for Rocket.rs apps, starting with MySQL and MariaDB. It maps tables to Rust types, with a query builder, transactions and migrations.</p>
       <p class="mt-4">
-        <a href="https://orbit.rocketboost.rs" class="text-link">Orbit docs</a> · <a target="_new" rel="noopener" href="https://github.com/lajennylove/Orbit" class="text-link">Orbit on GitHub</a>
+        <a target="_new" rel="noopener" href="https://github.com/lajennylove/Orbit" class="text-link">Orbit on GitHub</a> · <a href="https://orbit.rocketboost.rs" class="text-link">Orbit docs</a>
       </p>
     </article>
   </section>
