@@ -69,6 +69,10 @@
         </a>
       </li>
       <li class="flex justify-center">
+        <a target="_new" rel="noopener" href="https://laravel.com/docs/vite" class="flex items-center gap-3 text-link" title="Laravel Vite">
+          <img src="{{ asset('resources/images/brand/laravel.svg') }}" alt="" class="h-10 w-16 object-contain">
+          <span>Laravel Vite</span>
+        </a>
       </li>
       <li class="flex justify-center">
         <a target="_new" rel="noopener" href="https://vite.dev" class="flex items-center gap-3 text-link" title="Vite.js">
@@ -80,12 +84,6 @@
         <a target="_new" rel="noopener" href="https://tailwindcss.com" class="flex items-center gap-3 text-link" title="Tailwind CSS">
           <img src="{{ asset('resources/images/brand/tailwind-mark.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Tailwind CSS</span>
-        </a>
-      </li>
-      <li class="flex justify-center">
-        <a target="_new" rel="noopener" href="https://laravel.com/docs/vite" class="flex items-center gap-3 text-link" title="Laravel Vite">
-          <img src="{{ asset('resources/images/brand/laravel.svg') }}" alt="" class="h-10 w-16 object-contain">
-          <span>Laravel Vite</span>
         </a>
       </li>
     </ul>
