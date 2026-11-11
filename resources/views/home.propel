@@ -105,6 +105,7 @@
       </li>
       <li class="flex justify-center">
         <a target="_new" rel="noopener" href="https://roots.io/sage/" class="flex items-center gap-3 text-link" title="Roots Sage">
+          <img src="{{ asset('resources/images/brand/sage.svg') }}" alt="" class="h-10 w-16 object-contain">
           <span>Roots Sage</span>
         </a>
       </li>
